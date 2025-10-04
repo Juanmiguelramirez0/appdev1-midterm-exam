@@ -1,5 +1,14 @@
-
+import { useState } from "react";
 function App() {
+
+  const [toggleModal, setToggleModal] = useState(false);
+
+  function handleToggleModal() {
+    setToggleModal(!toggleModal);
+  }
+
+  // ...rest of your component
+}
 
   return (
       <>
