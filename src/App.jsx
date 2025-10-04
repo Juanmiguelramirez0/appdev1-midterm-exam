@@ -61,7 +61,7 @@ function App() {
               </li>
               <li>
                 <div className="gradient-button">
-                  <a id="modal_trigger" href="#modal">
+                  <a id="modal_trigger" href="#modal" onClick={handleToggleModal}>
                     <i className="fa fa-sign-in-alt" /> Sign In Now
                   </a>
                 </div>
@@ -921,6 +921,6 @@ function App() {
   {/* Scripts */}
 </>
   )
-}
+
 
 export default App
