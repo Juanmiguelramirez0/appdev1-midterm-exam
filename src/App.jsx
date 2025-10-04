@@ -77,7 +77,26 @@ function App() {
     </div>
   </header>
   {/* ***** Header Area End ***** */}
-  <div id="modal" className="popupContainer" style={{ display: "none" }}>
+  <div
+  id="modal"
+  className="popupContainer"
+  style={
+    toggleModal
+      ? {
+          display: "block",
+          position: "fixed",
+          opacity: 1,
+          zIndex: 11000,
+          left: "50%",
+          marginLeft: "-165px",
+          top: 100,
+        }
+      : {
+          display: "none",
+        }
+  }
+>
+
     <div className="popupHeader">
       <span className="header_title">Login</span>
       <span className="modal_close" onClick={handleToggleModal}>
