@@ -80,7 +80,7 @@ function App() {
   <div id="modal" className="popupContainer" style={{ display: "none" }}>
     <div className="popupHeader">
       <span className="header_title">Login</span>
-      <span className="modal_close">
+      <span className="modal_close" onClick={handleToggleModal}>
         <i className="fa fa-times" />
       </span>
     </div>
